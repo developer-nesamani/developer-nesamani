@@ -1,59 +1,61 @@
-<!-- Header with Animation -->
-<!-- <p align="center">
-  <img src="https://gist.github.com/mahee510/206a936d74fd93359d2f38d2a54410e9" alt="Animated Header"/>
-</p> -->
+<div align="center">
+  <img height="150" src="https://media.licdn.com/dms/image/D5603AQF7eXX8L80hQg/profile-displayphoto-shrink_800_800/0/1706016883796?e=1715212800&v=beta&t=Phj0YU_rCdtqjLxcNebm3u0L8hcg5mKV9BdPc6uNuIM"  />
+</div>
 
-# 👋 Hey, I'm Mahendran K - Mobile Developer! 📱✨
+###
 
-<!-- Welcome to my mobile-centric GitHub profile! I'm a passionate mobile app developer and UI/UX enthusiast, dedicated to crafting user-friendly and visually appealing mobile experiences. -->
-<!--
-## 🌟 About Me
+<div align="center">
+  <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
+  <img src="https://img.shields.io/static/v1?message=Stackoverflow&logo=stackoverflow&label=&color=FE7A16&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="stackoverflow logo"  />
+  <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="youtube logo"  />
+</div>
 
-🎓 I hold a degree in [Your Field of Study] and have been exploring the world of mobile development since [Year You Started]. My journey began with [Your First Mobile Development Experience] and I've been hooked ever since. I find joy in creating pixel-perfect UIs that make users' lives easier.
+###
 
-## 🚀 Mobile Magic
+<div align="center">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=mahee510.mahee510&"  />
+</div>
 
-- **Platform:** Primarily focused on [Platform 1] and [Platform 2]
-- **Languages:** Proficient in [Language 1], [Language 2]
-- **Frameworks:** Experienced with [Framework 1], [Framework 2]
-- **Design Tools:** Adobe XD, Sketch, Figma
-- **Version Control:** Git, GitHub
-- **App Deployment:** App Store Connect, Google Play Console
+###
 
-## 💼 Work & Projects
+<h1 align="center">Mahendran K 👋</h1>
 
-- **[Current Job Title]:** [Company Name], [Duration]
-  - Currently working on [Project Name], where I'm responsible for [Your Role/Contribution].
-- **[Previous Job Title]:** [Company Name], [Duration]
-  - Successfully led the development of [Project Name], resulting in [Achievement/Impact].
+###
 
-## 📱 Mobile Marvels
+<h3 align="left">I'm Mahendran, a mobile app developer with four years and ten months of experience. I have extensive experience developing mobile applications and am involved in all stages of the project. I will help you with multiple upgrades for different platforms. I'll strive to provide the finest and most innovative solution based on your criteria.</h3>
 
-Check out some of my mobile projects that I'm proud of:
+###
 
-- **[Project Name 1](link-to-project-1):** A [Brief Description of the Project], showcasing my skills in [Skills Used].
-- **[Project Name 2](link-to-project-2):** Designed a stunning UI for [App Name], focusing on [UI/UX Features].
+<p align="left">I'm Mahendran from Namakkal<br><br>- 🔭 I’m working as mobile app developer<br>- 📚 I'm currently learning AR/VR<br>- ⚡ In my free time, I'm researching about mobile app security</p>
 
-## 🌐 Connect with Me
+###
 
-Let's connect and discuss mobile development, UI design, and more:
-- [LinkedIn](https://www.linkedin.com/in/yourusername)
-- [Twitter](https://twitter.com/yourusername)
-- [Portfolio Website](https://www.yourwebsite.com)
+<h3 align="left">🛠 Language and tools</h3>
 
-## 📝 Blog & Learning
+###
 
-I share my insights and knowledge on mobile development on my blog. Check out my latest articles:
-- [Title of Blog Post 1](link-to-post-1): Exploring [Topic] in mobile app development.
-- [Title of Blog Post 2](link-to-post-2): Tips for creating responsive UI designs.
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=flutter" height="40" alt="flutter logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=firebase" height="40" alt="firebase logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=dart" height="40" alt="dart logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=swift" height="40" alt="swift logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=mongodb" height="40" alt="mongodb logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=nodejs" height="40" alt="nodejs logo"  />
+</div>
 
-## 🎮 Hobbies & Beyond
+###
 
-When I'm not coding, I'm [Your Hobbies]. I believe these activities fuel my creativity and help me think outside the box in my projects.
+<h3 align="left">🔥   My Stats :</h3>
 
-## 📫 Reach Out
+###
 
-Have questions, project ideas, or just want to chat about the latest mobile trends? Feel free to email me at [Your Email Address]. Let's create something amazing together!
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=mahee510&locale=en&mode=daily&theme=dark&hide_border=false&border_radius=5&order=3" height="220" alt="streak graph"  />
+</div>
 
-> "In a world of touchscreens, I craft experiences that touch the heart." - [Your Name]
-> --!>
+###
