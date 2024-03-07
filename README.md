@@ -22,7 +22,7 @@
 
 ###
 
-<h3 align="left">I'm Mahendran, a mobile app developer with four years and ten months of experience. I have extensive experience developing mobile applications and am involved in all stages of the project. I will help you with multiple upgrades for different platforms. I'll strive to provide the finest and most innovative solution based on your criteria.</h3>
+<h3 align="left">I'm a mobile app developer with four years and ten months of experience. I have extensive experience developing mobile applications and am involved in all stages of the project. I will help you with multiple upgrades for different platforms. I'll strive to provide the finest and most innovative solution based on your criteria.</h3>
 
 ###
 
