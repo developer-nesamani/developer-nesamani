@@ -1,67 +1,86 @@
 <div align="center">
-  <img height="150" src="https://media.licdn.com/dms/image/D5603AQF7eXX8L80hQg/profile-displayphoto-shrink_800_800/0/1706016883796?e=1715212800&v=beta&t=Phj0YU_rCdtqjLxcNebm3u0L8hcg5mKV9BdPc6uNuIM"  />
+
+> 🌐 **[View my interactive profile page →](https://developer-nesamani.github.io/developer-nesamani/profile.html)**
+
 </div>
 
-###
+---
+
+```
+~/mobile-dev · iOS · Android · Flutter · Wearables
+```
+
+I build apps that run on wrists — where milliseconds matter and a crash means more than a bad UX.
+
+---
+
+## My Story
+
+**`01`** — **Started with Flutter**
+One codebase, two platforms. Shipped to both the App Store and Play Store from a single repo and never looked back.
+
+**`02`** — **Went native on wrists**
+watchOS with Swift. WearOS with Kotlin. Tiny screens, tight memory budgets, real-time sensor data — the constraints made me sharper.
+
+**`03`** — **Healthcare wearables**
+Building a cross-platform healthcare app where reliability isn't optional. PHI/PII compliance, real-time MQTT, crash-free deployments across iOS, watchOS, Android, and WearOS.
+
+---
+
+## Right Now
+
+| | |
+|---|---|
+| 🔭 **Working on** | Healthcare wearables platform |
+| 📚 **Learning** | Cyber Security |
+| ⚡ **Researching** | Mobile app security |
+| 📍 **Based in** | Namakkal, Tamil Nadu |
+
+---
+
+## 🛠 Stack
+
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![watchOS](https://img.shields.io/badge/watchOS-000000?style=flat-square&logo=apple&logoColor=white)
+![WearOS](https://img.shields.io/badge/WearOS-4285F4?style=flat-square&logo=wearos&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=eclipsemosquitto&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Sentry](https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white)
+![Cyber Security](https://img.shields.io/badge/Cyber_Security-e74c3c?style=flat-square&logo=hackthebox&logoColor=white)
+
+---
+
+## 📊 Stats
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/mahendran715/" target="_blank"><img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  /></a>
-  <a href="https://stackoverflow.com/users/13080353/mahendran-k" target="_blank"><img src="https://img.shields.io/static/v1?message=Stackoverflow&logo=stackoverflow&label=&color=FE7A16&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="stackoverflow logo"  /></a>
-  <a href="https://youtube.com/@developernesamani?si=Ko6aODxFOVyrpKvt" target="_blank"><img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="youtube logo"  /></a>
+
+<!-- EXP_BADGE_START -->
+![Experience](https://img.shields.io/badge/Experience-4_yrs_10_mos-58a6ff?style=for-the-badge&logoColor=white)
+<!-- EXP_BADGE_END -->
+
+| 🗓 Experience | 📁 Public Repos | 📱 Platforms |
+|:---:|:---:|:---:|
+| <!-- EXP_START -->4 yrs 10 mos<!-- EXP_END --> | **10** | **4** |
+
+<img src="https://streak-stats.demolab.com?user=mahee510&locale=en&mode=daily&theme=github-dark-blue&hide_border=true&border_radius=8" height="180"/>
+
+<img src="https://github-readme-stats.vercel.app/api?username=developer-nesamani&show_icons=true&theme=github_dark&hide_border=true&border_radius=8&count_private=true" height="180"/>
+
 </div>
 
-###
+---
 
 <div align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=mahee510.mahee510&"  />
+
+*Building something that runs on a screen smaller than your palm? Let's talk.*
+
+[![LinkedIn](https://img.shields.io/badge/Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mahendran715/)
+[![YouTube](https://img.shields.io/badge/Watch-ff0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@developernesamani)
+[![Stack Overflow](https://img.shields.io/badge/Ask_me-f48024?style=for-the-badge&logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/13080353/mahendran-k)
+
 </div>
-
-###
-
-<h1 align="center">Mahendran K 👋</h1>
-
-###
-
-<h3 align="left">I'm a mobile app developer with four years and ten months of experience. I have extensive experience developing mobile applications and am involved in all stages of the project. I will help you with multiple upgrades for different platforms. I'll strive to provide the finest and most innovative solution based on your criteria.</h3>
-
-###
-
-<p align="left">I'm Mahendran from Namakkal<br><br>- 🔭 I’m working as mobile app developer<br>- 📚 I'm currently learning AR/VR<br>- ⚡ In my free time, I'm researching about mobile app security</p>
-
-###
-
-<h3 align="left">🛠 Language and tools</h3>
-
-###
-
-<div align="left">
-  <img src="https://skillicons.dev/icons?i=flutter" height="40" alt="flutter logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=firebase" height="40" alt="firebase logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=dart" height="40" alt="dart logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=swift" height="40" alt="swift logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=mongodb" height="40" alt="mongodb logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=nodejs" height="40" alt="nodejs logo"  />
-</div>
-
-###
-
-<h3 align="left">🔥   My Stats :</h3>
-
-###
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=mahee510&locale=en&mode=daily&theme=dark&hide_border=false&border_radius=5&order=3" height="220" alt="streak graph"  />
-</div>
-
-###
-
-<div align="center">
-  <img src="https://github-read-medium-git-main.pahlevikun.vercel.app/latest?limit=4&username=mahendrank75&theme=default" alt="Layout with last medium posts"  />
-</div>
-
-###
