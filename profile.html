@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mahendran K — Mobile Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Outfit', sans-serif;
+    background: #010409;
+    color: #e6edf3;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  .card {
+    width: 100%;
+    max-width: 860px;
+    background: #0d1117;
+    border: 1px solid #21262d;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    padding: 32px 36px 28px;
+    border-bottom: 1px solid #21262d;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .avatar {
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    border: 2px solid #30363d;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .header-text { flex: 1; }
+  .name {
+    font-size: 28px; font-weight: 800;
+    letter-spacing: -0.5px; line-height: 1.1;
+    color: #e6edf3;
+  }
+  .cursor {
+    font-family: 'JetBrains Mono', monospace;
+    color: #58a6ff; font-size: 22px;
+    animation: blink 1s step-end infinite;
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+  .tagline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: #8b949e;
+    margin-top: 6px;
+  }
+  .tagline .p { color: #3fb950; }
+  .tagline .b { color: #58a6ff; }
+  .socials { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+  .soc-btn {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 13px; font-weight: 600;
+    padding: 7px 14px; border-radius: 8px;
+    text-decoration: none; color: #fff;
+    transition: opacity .15s;
+  }
+  .soc-btn:hover { opacity: .85; }
+  .soc-btn svg { flex-shrink: 0; }
+
+  /* ── BODY GRID ── */
+  .body { display: grid; grid-template-columns: 1.45fr 1fr; gap: 0; }
+  .left  { padding: 28px 28px 28px 36px; border-right: 1px solid #21262d; }
+  .right { padding: 28px 36px 28px 28px; }
+
+  .sec-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: #3fb950;
+    letter-spacing: .12em; margin-bottom: 18px;
+  }
+
+  /* story timeline */
+  .timeline { display: flex; flex-direction: column; gap: 0; }
+  .tl-row { display: flex; gap: 14px; }
+  .tl-spine { display: flex; flex-direction: column; align-items: center; }
+  .tl-dot {
+    width: 28px; height: 28px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; font-weight: 700; flex-shrink: 0;
+  }
+  .tl-line { width: 2px; background: #21262d; flex: 1; margin: 4px 0; min-height: 28px; }
+  .tl-content { padding-top: 4px; padding-bottom: 20px; }
+  .tl-title { font-size: 14px; font-weight: 600; color: #e6edf3; margin-bottom: 4px; }
+  .tl-desc  { font-size: 12px; color: #8b949e; line-height: 1.65; }
+
+  /* right-side stat cards */
+  .info-cards { display: flex; flex-direction: column; gap: 10px; }
+  .info-card {
+    background: #161b22; border: 1px solid #30363d;
+    border-radius: 10px; padding: 12px 16px;
+  }
+  .info-label { font-size: 11px; color: #8b949e; margin-bottom: 3px; }
+  .info-val   { font-size: 13px; color: #e6edf3; font-weight: 500; }
+
+  /* ── STACK ── */
+  .stack-section {
+    padding: 20px 36px;
+    border-top: 1px solid #21262d;
+  }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+  .tag {
+    display: inline-flex; align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; padding: 4px 11px;
+    border-radius: 4px; border: 1px solid #30363d;
+    color: #c9d1d9; background: #161b22;
+  }
+
+  /* ── STATS ── */
+  .stats-section {
+    padding: 20px 36px 32px;
+    border-top: 1px solid #21262d;
+  }
+  .stat-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+    margin-top: 4px;
+  }
+  .stat-box {
+    background: #161b22; border: 1px solid #30363d;
+    border-radius: 10px; padding: 16px 10px; text-align: center;
+  }
+  .stat-val  { font-size: 22px; font-weight: 800; line-height: 1; }
+  .stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: #8b949e; margin-top: 5px;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    padding: 18px 36px;
+    border-top: 1px solid #21262d;
+    display: flex; align-items: center;
+    justify-content: space-between; flex-wrap: wrap; gap: 12px;
+  }
+  .footer-text { font-size: 12px; color: #8b949e; font-style: italic; }
+  .footer-btns { display: flex; gap: 8px; flex-wrap: wrap; }
+  .footer-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; padding: 5px 12px;
+    border-radius: 6px; border: 1px solid #30363d;
+    color: #c9d1d9; text-decoration: none;
+    background: #161b22; transition: border-color .15s, color .15s;
+  }
+  .footer-btn:hover { border-color: #58a6ff; color: #58a6ff; }
+
+  @media (max-width: 620px) {
+    .body { grid-template-columns: 1fr; }
+    .left { border-right: none; border-bottom: 1px solid #21262d; padding: 24px; }
+    .right { padding: 24px; }
+    .header { flex-direction: column; align-items: flex-start; }
+    .stack-section, .stats-section, .footer { padding-left: 24px; padding-right: 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="card">
+
+  <!-- HEADER -->
+  <div class="header">
+    <img class="avatar"
+      src="https://media.licdn.com/dms/image/D5603AQF7eXX8L80hQg/profile-displayphoto-shrink_800_800/0/1706016883796?e=1715212800&v=beta&t=Phj0YU_rCdtqjLxcNebm3u0L8hcg5mKV9BdPc6uNuIM"
+      alt="Mahendran K" />
+    <div class="header-text">
+      <div class="name">Mahendran K <span class="cursor">_</span></div>
+      <div class="tagline">
+        <span class="p">~/</span><span class="b">mobile-dev</span>
+        &nbsp;·&nbsp;iOS&nbsp;·&nbsp;Android&nbsp;·&nbsp;Flutter&nbsp;·&nbsp;Wearables
+      </div>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/mahendran715/" class="soc-btn" style="background:#0a66c2;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://stackoverflow.com/users/13080353/mahendran-k" class="soc-btn" style="background:#f48024;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M15.725 0l-1.72 1.277 6.39 8.588 1.716-1.277L15.725 0zm-3.94 3.418l-1.369 1.644 8.225 6.85 1.369-1.644-8.225-6.85zm-3.15 4.465l-.905 1.94 9.702 4.517.904-1.94-9.701-4.517zm-1.85 4.86l-.44 2.093 10.473 2.201.44-2.092-10.473-2.203zM1.89 15.47V24h19.19v-8.53h-2.133v6.397H4.021v-6.396H1.89zm4.265 2.133v2.13h10.66v-2.13H6.154Z"/></svg>
+          Stack Overflow
+        </a>
+        <a href="https://youtube.com/@developernesamani" class="soc-btn" style="background:#cc0000;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          YouTube
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="body">
+    <div class="left">
+      <div class="sec-label">// MY STORY</div>
+      <div class="timeline">
+        <div class="tl-row">
+          <div class="tl-spine">
+            <div class="tl-dot" style="background:#1f3a5f;color:#58a6ff;">01</div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-title">Started with Flutter</div>
+            <div class="tl-desc">One codebase, two platforms — shipped to both stores from a single repo and never looked back.</div>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-spine">
+            <div class="tl-dot" style="background:#1a3a2a;color:#3fb950;">02</div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-title">Went native on wrists</div>
+            <div class="tl-desc">watchOS · WearOS · tight memory budgets · real-time sensor data — the constraints made me sharper.</div>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-spine">
+            <div class="tl-dot" style="background:#2d1f5e;color:#d2a8ff;">03</div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-title">Healthcare wearables</div>
+            <div class="tl-desc">PHI/PII, real-time MQTT, crash-free across iOS, watchOS, Android, WearOS.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="sec-label">// RIGHT NOW</div>
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="info-label">🔭 working on</div>
+          <div class="info-val">Healthcare wearables platform</div>
+        </div>
+        <div class="info-card">
+          <div class="info-label">📚 learning</div>
+          <div class="info-val">Cyber Security</div>
+        </div>
+        <div class="info-card">
+          <div class="info-label">⚡ researching</div>
+          <div class="info-val">Mobile app security</div>
+        </div>
+        <div class="info-card">
+          <div class="info-label">📍 based in</div>
+          <div class="info-val">Namakkal, Tamil Nadu</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STACK -->
+  <div class="stack-section">
+    <div class="sec-label">// STACK</div>
+    <div class="tags">
+      <span class="tag" style="border-color:#58a6ff;color:#58a6ff;">Flutter</span>
+      <span class="tag" style="border-color:#f05138;color:#f05138;">Swift</span>
+      <span class="tag" style="border-color:#a78bfa;color:#a78bfa;">Kotlin</span>
+      <span class="tag" style="border-color:#4fc3f7;color:#4fc3f7;">Dart</span>
+      <span class="tag">watchOS</span>
+      <span class="tag">WearOS</span>
+      <span class="tag" style="border-color:#d2a8ff;color:#d2a8ff;">MQTT</span>
+      <span class="tag" style="border-color:#ffa657;color:#ffa657;">Firebase</span>
+      <span class="tag" style="border-color:#3fb950;color:#3fb950;">Node.js</span>
+      <span class="tag" style="border-color:#3fb950;color:#3fb950;">MongoDB</span>
+      <span class="tag">Sentry</span>
+      <span class="tag">n8n</span>
+      <span class="tag" style="border-color:#3fb950;color:#3fb950;">Clean Arch</span>
+      <span class="tag" style="border-color:#f05138;color:#f05138;">Cyber Security</span>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-section">
+    <div class="sec-label">// STATS</div>
+    <div class="stat-grid">
+      <div class="stat-box">
+        <div class="stat-val" style="color:#58a6ff;" id="exp-val">—</div>
+        <div class="stat-label">experience</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val" style="color:#3fb950;">10</div>
+        <div class="stat-label">public repos</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val" style="color:#d2a8ff;">4</div>
+        <div class="stat-label">platforms shipped</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-text">Building something for a screen smaller than your palm? Let's talk.</div>
+    <div class="footer-btns">
+      <a href="https://www.linkedin.com/in/mahendran715/" class="footer-btn">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="#0a66c2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://youtube.com/@developernesamani" class="footer-btn">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="#ff0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YouTube
+      </a>
+      <a href="https://stackoverflow.com/users/13080353/mahendran-k" class="footer-btn">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="#f48024"><path d="M15.725 0l-1.72 1.277 6.39 8.588 1.716-1.277L15.725 0zm-3.94 3.418l-1.369 1.644 8.225 6.85 1.369-1.644-8.225-6.85zm-3.15 4.465l-.905 1.94 9.702 4.517.904-1.94-9.701-4.517zm-1.85 4.86l-.44 2.093 10.473 2.201.44-2.092-10.473-2.203zM1.89 15.47V24h19.19v-8.53h-2.133v6.397H4.021v-6.396H1.89zm4.265 2.133v2.13h10.66v-2.13H6.154Z"/></svg>
+        Stack Overflow
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const start = new Date('2021-05-20');
+  const now   = new Date();
+  let months  = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
+  if (now.getDate() < start.getDate()) months--;
+  const yrs = Math.floor(months / 12);
+  const mos = months % 12;
+  document.getElementById('exp-val').textContent = yrs + ' yrs ' + mos + ' mos';
+</script>
+</body>
+</html>

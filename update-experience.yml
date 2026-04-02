@@ -1,0 +1,55 @@
+name: Update Experience
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Calculate and update experience
+        run: |
+          python3 << 'EOF'
+          import re
+          from datetime import date
+
+          start = date(2021, 5, 20)
+          today = date.today()
+
+          months_total = (today.year - start.year) * 12 + (today.month - start.month)
+          if today.day < start.day:
+              months_total -= 1
+
+          years  = months_total // 12
+          months = months_total % 12
+          exp_str    = f"{years} yrs {months} mos"
+          badge_str  = f"{years}_yrs_{months}_mos"
+
+          for fname in ["README.md"]:
+              with open(fname, "r") as f:
+                  content = f.read()
+              content = re.sub(
+                  r'(<!-- EXP_START -->).*?(<!-- EXP_END -->)',
+                  rf'\g<1>{exp_str}\g<2>', content
+              )
+              content = re.sub(
+                  r'(Experience-)[\w%_]+-58a6ff',
+                  rf'\g<1>{badge_str}-58a6ff', content
+              )
+              with open(fname, "w") as f:
+                  f.write(content)
+
+          print(f"Updated: {exp_str}")
+          EOF
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore: update experience [skip ci]"
+          git push
