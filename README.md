@@ -60,12 +60,12 @@ Building a cross-platform healthcare app where reliability isn't optional. PHI/P
 <div align="center">
 
 <!-- EXP_BADGE_START -->
-![Experience](https://img.shields.io/badge/Experience-6_yrs_11_mos-58a6ff?style=for-the-badge&logoColor=white)
+![Experience](https://img.shields.io/badge/Experience-7_yrs_0_mos-58a6ff?style=for-the-badge&logoColor=white)
 <!-- EXP_BADGE_END -->
 
 | 🗓 Experience | 📁 Public Repos | 📱 Platforms |
 |:---:|:---:|:---:|
-| <!-- EXP_START -->6 yrs 11 mos<!-- EXP_END --> | **10** | **4** |
+| <!-- EXP_START -->7 yrs 0 mos<!-- EXP_END --> | **10** | **4** |
 
 <img src="https://streak-stats.demolab.com?user=mahee510&locale=en&mode=daily&theme=github-dark-blue&hide_border=true&border_radius=8" height="180"/>
 
